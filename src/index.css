@@ -699,6 +699,58 @@ body {
   }
 }
 
+/* ===== AJUSTES EXTRA PARA IPHONE Y SAMSUNG S24 ===== */
+
+/* iPhone 12–17 (pantallas entre 360px y 430px de ancho, alta densidad) */
+@media only screen 
+  and (max-device-width: 430px)
+  and (min-device-width: 360px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .banner-container {
+    margin-top: 190px !important;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .product-card img {
+    height: 135px !important;
+  }
+
+  .login-container,
+  .register-container,
+  .checkout-container {
+    margin: 260px auto 1rem !important;
+  }
+}
+
+/* Samsung S24 (pantallas más altas, aprox. 415–430px de ancho, 19.5:9) */
+@media only screen 
+  and (min-device-width: 390px)
+  and (max-device-width: 430px)
+  and (orientation: portrait) {
+
+  .banner-container {
+    margin-top: 200px !important;
+  }
+
+  .product-card img {
+    height: 145px !important;
+  }
+
+  .login-container,
+  .register-container,
+  .checkout-container {
+    margin: 240px auto 1rem !important;
+  }
+
+  .categories-navbar {
+    padding: 8px 6px;
+  }
+}
 
 
 
